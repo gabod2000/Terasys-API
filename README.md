@@ -6,10 +6,10 @@ A docker stack for dev and AWS EC2/ECS prod.
 
 ### **dependencies**
 
-docker@^17.09.0-ce
-docker-compose@^1.16.1
-docker-sync@^0.4.6 (osx only)
-node@^8.7.0
+- docker@^17.09.0-ce
+- docker-compose@^1.16.1
+- docker-sync@^0.4.6 (osx only)
+- node@^8.7.0
 
 ### **Introduction**
 
