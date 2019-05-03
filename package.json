@@ -4,6 +4,9 @@
   "description": "Node server to collect sensor data and server to endpoints",
   "main": "main.js",
   "author": "irwynks",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "async": "*",
     "bcryptjs": "^1.0.2",
