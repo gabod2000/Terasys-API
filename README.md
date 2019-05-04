@@ -13,7 +13,7 @@ A docker stack for dev and AWS EC2/ECS prod.
 
 - clone the repo on a local machine
 - navigate to project root directory
-- run docker build -t <give it a name of your choice> .
+- run docker build -t (give it a name of your choice) . remember to put the "." indicating the current folder
   e.g docker build -t Tersarys-image .
 - after the build is successful you can run docker images to see the list of exisiting images including the one we just created
 - run "docker run --name Tersarys-container(tagging our container by giving it a custom name) -i -t Tersarys-image(name of existing image)
