@@ -1,21 +1,53 @@
 config = require('./config');
 
-var express = require('express');
-var app = express();
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const flash = require('express-flash');
+const passport = require('passport');
+const http = require('http');
 
-var mongoose = require('mongoose');
+const app = express();
+const router = express.Router();
 
-mongoose.Promise = global.Promise;
-mongoose.connect(config.mongodb.host);
 
-var bodyParser = require('body-parser');
 app.use(bodyParser.json({
     limit: '5mb'
 }));
+
 app.use(bodyParser.urlencoded({
     limit: '5mb',
     extended: true
 }));
+
+app.use(flash());
+
+//Initialize passport for jwt login
+app.use(passport.initialize());
+app.use(passport.session());
+require("./auth/control.jwt")(passport);
+
+app.use(router);
+
+require('./prototypes');
+require('./routes/route.main')(router);
+
+const server = http.createServer(app);
+
+const io = require('socket.io')(server);
+
+require('./sockets/socket.main')(io);
+
+app.get('/', (req, res) => res.send('API works'));
+
+mongoose.Promise = global.Promise;
+mongoose.connect(config.mongodb.host, {
+    useNewUrlParser: true
+});
+
+app.listen(config.port).on('listening', function () {
+    console.log('Listening on port ' + config.port)
+});
 
 //Set up sessions in express
 /*
@@ -28,9 +60,6 @@ app.use(bodyParser.urlencoded({
  app.use(sessionMiddleware);
  */
 
-var flash = require('express-flash');
-app.use(flash());
-
 //Initialize passport for local login
 /*
  var passport = require('passport');
@@ -38,26 +67,3 @@ app.use(flash());
  app.use(passport.session());
  require('./auth/control.local.js')(passport);
  */
-
-//Initialize passport for jwt login
-var passport = require('passport');
-app.use(passport.initialize());
-app.use(passport.session());
-require("./auth/control.jwt")(passport);
-
-var router = express.Router();
-app.use(router);
-
-require('./prototypes');
-require('./routes/route.main')(router);
-
-var server = require('http').createServer(app);
-var io = require('socket.io')(server);
-
-require('./sockets/socket.main')(io);
-
-app.get('/', (req, res) => res.send('API works'));
-
-app.listen(config.port).on('listening', function () {
-    console.log('Listening on port ' + config.port)
-});
