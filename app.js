@@ -10,6 +10,10 @@ const http = require('http');
 const app = express();
 const router = express.Router();
 
+mongoose.Promise = global.Promise;
+mongoose.connect(config.mongodb.host, {
+    useNewUrlParser: true
+});
 
 app.use(bodyParser.json({
     limit: '5mb'
@@ -39,11 +43,6 @@ const io = require('socket.io')(server);
 require('./sockets/socket.main')(io);
 
 app.get('/', (req, res) => res.send('API works'));
-
-mongoose.Promise = global.Promise;
-mongoose.connect(config.mongodb.host, {
-    useNewUrlParser: true
-});
 
 app.listen(config.port).on('listening', function () {
     console.log('Listening on port ' + config.port)

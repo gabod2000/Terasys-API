@@ -1,29 +1,48 @@
 # **Readme**
 
-## Webhook Api documentation
+# rally-mvp
 
 A docker stack for dev and AWS EC2/ECS prod.
 
-### **dependencies**
+## dependencies
 
-- docker@^17.09.0-ce
-- node@^8.7.0
+Ensure these are installed before going further:
 
-### **docker usage**
+- docker@\^18.05.0-ce
+- docker-compose@\^1.21.2
 
-- clone the repo on a local machine
-- navigate to project root directory
-- run docker build -t (give it a name of your choice) . remember to put the "." indicating the current folder
-  e.g docker build -t terasys-image .
-- after the build is successful you can run "docker images" to see the list of exisiting images including the one we just created
-- run "docker run --name tersarys-container(tagging our container by giving it a custom name) -i -t tersarys-image(name of existing image)
-- run localhost:8089 as specified in config.js to confirm if it works
+## development
 
-### **Docker commands**
+### 0. setup
 
-- to force remove an image run "docker rmi -f image_id"
-- to remove a docker container "docker remove container_id"
-- To remove docker image run "docker images" to capture the name of the image you want to remove
+    create .env from .env-lock for each service
+
+### 1. run
+
+    docker-compose up -d
+
+You can begin editing code on your host machine, changes will be detected and all relevant processes restarted or live-reloaded inside their containers.
+
+### 2. inspect
+
+    docker-compose ps (print status)
+    docker-compose logs api front (attaches to logs of one or more services)
+
+## production
+
+### 0. setup
+
+    create config.js in api root folder and enter the corresponding keys
+
+### 1. run
+
+    docker-compose up -d
+
+### 2. inspect
+
+    docker-compose logs api/front
+
+- go to localhost:port to confirm api is running
 
 ### **Introduction**
 

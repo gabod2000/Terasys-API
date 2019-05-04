@@ -1,14 +1,13 @@
 module.exports = {
 
     secret: 'wfoED5fYqH0AHuk3xPZ0oF9xTh6a406c',
-    port: 8010,
+    port: 3000,
     defaults: {
         limit: 10,
         filter: 'timestamp'
     },
     mongodb: {
-        host: 'mongodb://localhost/terasys',
-        useNewUrlParser: true
+        host: 'mongodb://mongo:27017/docker-node-mongo'
     },
     sendgrid: {
         user: 'apikey',
