@@ -15,7 +15,7 @@ Ensure these are installed before going further:
 
 ### 0. setup
 
-    create .env from .env-lock for each service
+    create config.js in api root folder and enter the corresponding keys
 
 ### 1. run
 
