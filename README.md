@@ -17,7 +17,7 @@ https://docs.docker.com/install/
 
     create config.js in api root folder and enter the corresponding keys
     configsample.js provies a samplte of keys that need to be added like the screenshot below
-    blob:https://web.whatsapp.com/d5eead3d-f08b-4648-b0f7-015407ff0d5e
+    https://web.whatsapp.com/d5eead3d-f08b-4648-b0f7-015407ff0d5e
     
 ### 1. run
 
