@@ -17,7 +17,6 @@ https://docs.docker.com/install/
 
     create config.js in api root folder and enter the corresponding keys
     configsample.js provies a samplte of keys that need to be added like the screenshot below
-    https://web.whatsapp.com/d5eead3d-f08b-4648-b0f7-015407ff0d5e
     
 ### 1. run
 
@@ -25,9 +24,7 @@ https://docs.docker.com/install/
     - step 1: clone the git repo by running the command "git clone https://github.com/gabod2000/Terasys-API.git"
     - step 2: navigate into the cloned project folder on your local machine
     - step 3: run the command "docker-compose up -d" 
-    blob:https://web.whatsapp.com/d171958f-5a90-4f61-91fe-6181ef68f43d
     - step 4: run "docker ps" to see your running docker
-    blob:https://web.whatsapp.com/85090515-1eb0-43e9-99ba-4b5f23b9ce1b
     - step 4: if the run is successful we can go to localhost:3001 to see our api running in our browser
 
 ### 2. inspect
