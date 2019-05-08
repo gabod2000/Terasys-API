@@ -15,8 +15,8 @@ https://docs.docker.com/install/
 
 ### 0. setup
 
-    create config.js in api root folder and enter the corresponding keys
-    configsample.js provies a samplte of keys that need to be added like the screenshot below
+    - create config.js in api root folder and enter the corresponding keys
+    - configsample.js provies a samplte of keys that need to be added like the screenshot below
     
 ### 1. run
 
