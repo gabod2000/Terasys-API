@@ -9,7 +9,7 @@ Devices need to be registered before they can send data to API.
 
 ### **REST API**
 
-REST API documentation can be found [here](https://documenter.getpostman.com/collection/view/1909663-fbb9d248-decd-d62c-608d-ba5714087222)
+REST API documentation can be found [here](https://documenter.getpostman.com/view/1909663/6fVW5LF?0=o&1=n&2=b&3=o&4=a&5=r&6=d&7=i&8=n&9=g&10=c&11=o&12=m&13=p&14=l&15=e&16=t&17=e&version=latest)
 
 ### **Socket.io**
 
