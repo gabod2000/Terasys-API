@@ -3794,7 +3794,8 @@
       "EndpointGroupName": "",
       "EndpointName": ""
     },
-    "IsLatestVersion": false
+    "IsLatestVersion": false,
+    "EnableImmutableModels": false
   },
   "Errors": [],
   "TestGenSettings": {
