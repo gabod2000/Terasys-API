@@ -1,37 +1,5 @@
 # **Readme**
 
-A docker stack for dev and prod.
-
-## dependencies
-
-Ensure these are installed before going further:
-
-- docker@\^18.05.0-ce
-- docker-compose@\^1.21.2
-
-https://docs.docker.com/install/
-
-## development
-
-### 0. setup
-
-    - create config.js in api root folder and enter the corresponding keys
-    - configsample.js provies a samplte of keys that need to be added like the screenshot below
-
-### 1. run
-
-    To run the application follow the steps below
-    - step 1: clone the git repo by running the command "git clone https://github.com/gabod2000/Terasys-API.git"
-    - step 2: navigate into the cloned project folder on your local machine
-    - step 3: run the command "docker-compose up -d"
-    - step 4: run "docker ps" to see your running docker
-    - step 4: if the run is successful we can go to localhost:3001 to see our api running in our browser
-
-### 2. inspect
-
-     - view all docker containers: docker-compose ps (print status)
-     - to view logs docker-compose logs api/db (attaches to logs of one or more services)
-
 ### **Introduction**
 
 Backend API to take in data from IoT devices and serve it to clients via REST endpoints.
@@ -156,4 +124,4 @@ Ensure these are installed/provided before going further:
 
 ### 2. inspect
 
-    docker logs <container-name>
+docker logs <container-name>
