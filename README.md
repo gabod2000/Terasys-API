@@ -17,13 +17,13 @@ https://docs.docker.com/install/
 
     - create config.js in api root folder and enter the corresponding keys
     - configsample.js provies a samplte of keys that need to be added like the screenshot below
-    
+
 ### 1. run
 
     To run the application follow the steps below
     - step 1: clone the git repo by running the command "git clone https://github.com/gabod2000/Terasys-API.git"
     - step 2: navigate into the cloned project folder on your local machine
-    - step 3: run the command "docker-compose up -d" 
+    - step 3: run the command "docker-compose up -d"
     - step 4: run "docker ps" to see your running docker
     - step 4: if the run is successful we can go to localhost:3001 to see our api running in our browser
 
@@ -129,3 +129,31 @@ socket.emit('unregister', '00:0a:95:9d:68:16');
   (3) **offset(optional)**: the number of data to skip when querying.
 
   (4) **asset(compulsory)**: serial number of the asset which event is required
+
+## Run the API as a docker container
+
+A docker stack for production env
+
+## dependencies
+
+Ensure these are installed/provided before going further:
+
+- docker@\^18.05.0-ce
+
+## production
+
+### 0. setup
+
+    create config.js file and populate appropriately using the configsample.js file
+
+### 1. run
+
+- docker build -t terasys-api-image .  
+  (notice the "." this tells docker to look into the current folder)
+
+- docker run -d -p port:port image_name:tag_name
+  (docker run -d -p 3000:3000 terasys-api-image:terasys-api-container)
+
+### 2. inspect
+
+    docker logs <container-name>
