@@ -129,4 +129,4 @@ Ensure these are installed/provided before going further:
 
 ### 2. inspect
 
-docker logs your-container-name>
+`docker logs your-container-name`
