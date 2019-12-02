@@ -116,13 +116,13 @@ Ensure these are installed/provided before going further:
 
 ### 1. run
 
-- docker build -t terasys-api-image .  
+- `docker build -t terasys-api-image . ` 
   (notice the "." this tells docker to look into the current folder)
 
 - run `docker images` to view all images
 
 - docker run -d -p port:port image_name:tag_name
-  e.g (docker run -d -p 3000:3000 terasys-api-image:terasys-api-container)
+  e.g (`docker run -d -p 3000:3000 terasys-api-image:terasys-api-container`)
 
 - run `docker ps` to view all running containers and `docker-ps -a` to view both running and stopped
 
