@@ -27,16 +27,6 @@ USER node
 # Serve the app
 CMD ["npm", "start"]
 
-FROM node:10-alpine
 
 
 
-
-
-RUN yarn run build && yarn global add serve 
-
-EXPOSE 5000
-
-USER node
-
-CMD ["serve", "-s", "build"]
