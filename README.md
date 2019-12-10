@@ -122,10 +122,10 @@ Ensure these are installed before going further:
 
 ### 2. inspect
 
-`docker-compose ps` (print status)
-`docker-compose logs service-name(e.g api or mongo)` (attaches to logs of one or more services)
+- `docker-compose ps` (print status)
+- `docker-compose logs service-name(e.g api or mongo)` (attaches to logs of one or more services)
 
 ### 3. run
 
-go to your /etc/hosts and map to your ip to api.terasys.com
+go to your /etc/hosts and map your ip to api.terasys.com
 `127.0.0.1 app.terasys.com` to view it on your browser.
