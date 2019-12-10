@@ -104,9 +104,10 @@ A docker stack for production env
 
 ## dependencies
 
-Ensure these are installed/provided before going further:
+Ensure these are installed before going further:
 
 - docker@\^18.05.0-ce
+- docker-compose@^1.21.2
 
 ## production
 
@@ -116,17 +117,15 @@ Ensure these are installed/provided before going further:
 
 ### 1. run
 
-- `docker build -t terasys-api-image . ` 
-  (notice the "." this tells docker to look into the current folder)
-
-- run `docker images` to view all images
-
-- docker run -d -p port:port image_name:tag_name
-  e.g (`docker run -d -p 3000:3000 terasys-api-image:terasys-api-container`)
-
-- run `docker ps` to view all running containers and `docker-ps -a` to view both running and stopped
-
+- `docker-compose up -d`
+  You can begin editing code on your host machine, changes will be detected and all relevant processes restarted or live-reloaded inside their containers.
 
 ### 2. inspect
 
-`docker logs your-container-name`
+`docker-compose ps` (print status)
+`docker-compose logs service-name(e.g api or mongo)` (attaches to logs of one or more services)
+
+### 3. run
+
+go to your /etc/hosts and map to your ip to api.terasys.com
+`127.0.0.1 app.terasys.com` to view it on your browser.
