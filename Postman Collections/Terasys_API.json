@@ -117,7 +117,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Register User",
@@ -207,7 +209,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Register Device",
@@ -297,7 +301,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "User Login",
@@ -387,7 +393,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Forgot Password",
@@ -477,7 +485,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Reset Password",
@@ -545,7 +555,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Reset Password",
@@ -657,7 +669,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Logout",
@@ -725,7 +739,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Get user details",
@@ -815,7 +831,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Update User Details",
@@ -949,7 +967,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Get Device(s)",
@@ -1221,7 +1241,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Add New Device",
@@ -1333,7 +1355,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Update Device",
@@ -1467,7 +1491,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Remove Device",
@@ -1557,7 +1583,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Generate Device Key",
@@ -1647,7 +1675,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Get Device Key",
@@ -1737,7 +1767,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Regenerate Device Key",
@@ -1827,7 +1859,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Post Data",
@@ -1890,7 +1924,9 @@
       "Errors": [],
       "TestCases": [],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Get Data",
@@ -2024,7 +2060,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Create View",
@@ -2136,7 +2174,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Get Views",
@@ -2226,7 +2266,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Update View",
@@ -2338,7 +2380,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Delete View",
@@ -2450,7 +2494,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     }
   ],
   "EndpointGroups": [
