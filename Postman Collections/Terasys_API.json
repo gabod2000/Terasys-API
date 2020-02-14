@@ -34,6 +34,7 @@
       "Description": "This endpoint is used to register administrators in the system. To use the endpoint an administrative key must be supplied as an additional body parameter. \n<br><br>\nDefault admin registration key is: **8JadZIptT2ysZPKQUAdBWw.lwewT8M4**",
       "HTTPMethod": "POST",
       "Group": "1. Device and User Registration",
+      "RequestContentType": "application/json",
       "RequiresAuthentication": true,
       "Route": "/registerAdmin",
       "Response": {
@@ -126,6 +127,7 @@
       "Description": "Use this endpoint to register a new user. Devices can be assigned to user on creation, but are not required.\n<br><br>\n**Must be logged in as admin to use this endpoint**<br>\n**Requires JWT token in header**",
       "HTTPMethod": "POST",
       "Group": "1. Device and User Registration",
+      "RequestContentType": "application/json",
       "RequiresAuthentication": true,
       "Route": "/register",
       "Response": {
@@ -310,6 +312,7 @@
       "Description": "This endpoint is used to log in to the API. If login is successful, this endpoint returns an authorization token to be included as a header for endpoints that require JWT authorization.",
       "HTTPMethod": "POST",
       "Group": "2. Login and Password Reset",
+      "RequestContentType": "application/json",
       "RequiresAuthentication": true,
       "Route": "/login",
       "Response": {
@@ -402,6 +405,7 @@
       "Description": "This endpoint can be used to initiate the password change process. POST the user's email address. The API will send an email to the user to link to the password reset page.",
       "HTTPMethod": "POST",
       "Group": "2. Login and Password Reset",
+      "RequestContentType": "application/json",
       "RequiresAuthentication": true,
       "Route": "/forgot",
       "Response": {
@@ -564,6 +568,7 @@
       "Description": "Use this endpoint to issue the password reset to the API. The API checks to see if the token is valid for that user, and updates the password in the database.",
       "HTTPMethod": "POST",
       "Group": "2. Login and Password Reset",
+      "RequestContentType": "application/json",
       "RequiresAuthentication": true,
       "Route": "/reset/{token}",
       "Response": {
@@ -840,6 +845,7 @@
       "Description": "This endpoint is used to update user details. When authenticated as user, the corresponding user profile is updated. When authenticated as admin, the profile corresponding to the user ID supplied in the path is updated. Admins can directly change password.\n<br><br>\n**Requires JWT token in header**",
       "HTTPMethod": "PATCH",
       "Group": "3. User Details",
+      "RequestContentType": "application/json",
       "RequiresAuthentication": false,
       "Route": "/user/{id}",
       "Response": {
@@ -1138,6 +1144,7 @@
           "DefaultValue": "Express"
         }
       ],
+      "ResponseContentType": "application/json; charset=utf-8",
       "HasOptionalQueryParams": false,
       "HasOptionalFieldParams": false,
       "CollectParameters": false,
@@ -1250,6 +1257,7 @@
       "Description": "This endpoint is used to add a device to the system. Only accessible as admin.\n<br><br>\n**Requires administrator access**\n<br>\n**Requires JWT token in header**",
       "HTTPMethod": "POST",
       "Group": "4. Device Management",
+      "RequestContentType": "application/json",
       "RequiresAuthentication": false,
       "Route": "/devices",
       "Response": {
@@ -1364,6 +1372,7 @@
       "Description": "This endpoint is used to update device details.\n<br><br>\n**Requires administrator access**\n<br>\n**Requires JWT token in header**",
       "HTTPMethod": "PATCH",
       "Group": "4. Device Management",
+      "RequestContentType": "application/json",
       "RequiresAuthentication": false,
       "Route": "/devices/{mac-address}",
       "Response": {
@@ -1868,6 +1877,7 @@
       "Description": "This endpoint is used to receive data from the devices. The different metrics are provided in an array inside the body of the POST request. <br>Refer to sample for format.\n<br><br>\n**Requires device key in POST body**",
       "HTTPMethod": "POST",
       "Group": "6. Sending and Retrieving Data",
+      "RequestContentType": "application/json",
       "RequiresAuthentication": true,
       "Route": "/data",
       "Response": {
@@ -1933,6 +1943,7 @@
       "Description": "Use this endpoint to retrieve datapoints for the metric and device specified in the path. Users can only access data for devices associated to their profile.\n<br><br>\n**Query Parameters:**\n\n\tpage: for pagination\n\tresults: for number of results per page, defaults to 10\n\tfilter: select field to sort by, defaults to timestamp\n\torder: asc or desc\n\n<br>\n**Requires JWT token in header**",
       "HTTPMethod": "GET",
       "Group": "6. Sending and Retrieving Data",
+      "RequestContentType": "application/json",
       "RequiresAuthentication": false,
       "Route": "/data/{metric}/{mac-address}",
       "Response": {
@@ -2069,6 +2080,7 @@
       "Description": "Use this endpoint to retrieve different views for a user. Views are uniquely identified by their name. Users can only retrieve views associated to their profile. If logged in as admin, the views belonging to the user specified in the path will be returned.\n<br><br>\n**Requires JWT token in header**",
       "HTTPMethod": "POST",
       "Group": "7. Views",
+      "RequestContentType": "application/json",
       "RequiresAuthentication": false,
       "Route": "/views",
       "Response": {
@@ -2275,6 +2287,7 @@
       "Description": "Use this endpoint to update/change the details for a view. Users can only modify views associated with their profile. Admins can change views for a specific user by providing a userid field in the request body.\n<br><br>\n**Requires JWT token in header**",
       "HTTPMethod": "PATCH",
       "Group": "7. Views",
+      "RequestContentType": "application/json",
       "RequiresAuthentication": false,
       "Route": "/views",
       "Response": {
@@ -2389,6 +2402,7 @@
       "Description": "Use this endpoint to remove a specific view. Users can only remove views associated with their profile. Admins can remove views for a specific user by providing a userid field in the request body.\n<br><br>\n**Requires JWT token in header**",
       "HTTPMethod": "DELETE",
       "Group": "7. Views",
+      "RequestContentType": "application/json",
       "RequiresAuthentication": false,
       "Route": "/views",
       "Response": {
