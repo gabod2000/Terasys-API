@@ -3858,7 +3858,8 @@
       "EndpointName": ""
     },
     "IsLatestVersion": false,
-    "EnableImmutableModels": false
+    "EnableImmutableModels": false,
+    "UseEndpointMethodName": false
   },
   "Errors": [],
   "TestGenSettings": {
