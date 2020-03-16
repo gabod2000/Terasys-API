@@ -37,6 +37,7 @@
       "RequestContentType": "application/json",
       "RequiresAuthentication": true,
       "Route": "/registerAdmin",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -130,6 +131,7 @@
       "RequestContentType": "application/json",
       "RequiresAuthentication": true,
       "Route": "/register",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -222,6 +224,7 @@
       "Group": "1. Device and User Registration",
       "RequiresAuthentication": false,
       "Route": "/keys/{mac-address}",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -315,6 +318,7 @@
       "RequestContentType": "application/json",
       "RequiresAuthentication": true,
       "Route": "/login",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -408,6 +412,7 @@
       "RequestContentType": "application/json",
       "RequiresAuthentication": true,
       "Route": "/forgot",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -500,6 +505,7 @@
       "Group": "2. Login and Password Reset",
       "RequiresAuthentication": true,
       "Route": "/reset/{token}",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -571,6 +577,7 @@
       "RequestContentType": "application/json",
       "RequiresAuthentication": true,
       "Route": "/reset/{token}",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -685,6 +692,7 @@
       "Group": "2. Login and Password Reset",
       "RequiresAuthentication": false,
       "Route": "/logout",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -755,6 +763,7 @@
       "Group": "3. User Details",
       "RequiresAuthentication": false,
       "Route": "/user/{id}",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -848,6 +857,7 @@
       "RequestContentType": "application/json",
       "RequiresAuthentication": false,
       "Route": "/user/{id}",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -984,6 +994,7 @@
       "Group": "4. Device Management",
       "RequiresAuthentication": false,
       "Route": "/data/humidity/5c:cf:7f:c4:10:36",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Get data from device-07-26-17",
@@ -1260,6 +1271,7 @@
       "RequestContentType": "application/json",
       "RequiresAuthentication": false,
       "Route": "/devices",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -1375,6 +1387,7 @@
       "RequestContentType": "application/json",
       "RequiresAuthentication": false,
       "Route": "/devices/{mac-address}",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -1511,6 +1524,7 @@
       "Group": "4. Device Management",
       "RequiresAuthentication": false,
       "Route": "/devices/{mac-address}",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -1603,6 +1617,7 @@
       "Group": "5. Device Keys",
       "RequiresAuthentication": false,
       "Route": "/keys/{mac-address}",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -1695,6 +1710,7 @@
       "Group": "5. Device Keys",
       "RequiresAuthentication": false,
       "Route": "/keys/{mac-address}",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -1787,6 +1803,7 @@
       "Group": "5. Device Keys",
       "RequiresAuthentication": false,
       "Route": "/keys/{mac-address}/regen",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -1880,6 +1897,7 @@
       "RequestContentType": "application/json",
       "RequiresAuthentication": true,
       "Route": "/data",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -1946,6 +1964,7 @@
       "RequestContentType": "application/json",
       "RequiresAuthentication": false,
       "Route": "/data/{metric}/{mac-address}",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -2083,6 +2102,7 @@
       "RequestContentType": "application/json",
       "RequiresAuthentication": false,
       "Route": "/views",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -2197,6 +2217,7 @@
       "Group": "7. Views",
       "RequiresAuthentication": false,
       "Route": "/views/{id}",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -2290,6 +2311,7 @@
       "RequestContentType": "application/json",
       "RequiresAuthentication": false,
       "Route": "/views",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -2405,6 +2427,7 @@
       "RequestContentType": "application/json",
       "RequiresAuthentication": false,
       "Route": "/views",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -3783,6 +3806,7 @@
       "Deprecated": false
     }
   ],
+  "UserDefinedImportedTypes": [],
   "CodeGenSettings": {
     "SynchronyMode": "Asynchronous",
     "ModelSerializationScheme": "Json",
